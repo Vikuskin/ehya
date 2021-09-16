@@ -1,0 +1,1126 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ehya</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    rel="stylesheet"
+      type="text/css"
+      href="css/swiper-bundle.min.css"
+    >
+  </head>
+  <body>
+    <div id="toTop"><img src="img/arrow-top.png" alt="Arrow to top" /></div>
+    <header class="header">
+      <div class="header-content">
+        <div class="container">
+          <div class="header-top">
+            <div class="logo logo--hidden">
+              <a href="index.html">
+                <img src="img/logo.svg" alt="Logo: ehoy" class="logo" />
+              </a>
+            </div>
+            <div class="header-menu">
+              <div class="header-navigation header-navigation--hidden">
+                <ul class="ul">
+                  <li class="li"><a href="#">Домой</a></li>
+                  <li class="li">
+                    <a href="#" class="lending li"
+                      >Лендинги <img src="img/angle-down.svg" alt="Angle-down"
+                    /></a>
+                    <ul class="dropdown dropdown--mobile">
+                      <li class="li"><a href="#">Продающие</a></li>
+                      <li class="li"><a href="#">Подписные</a></li>
+                      <li class="li">
+                        <a href="#">Информационные</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="li">
+                    <a href="#" class="page li"
+                      >Страницы <img src="img/angle-down.svg" alt="Angle-down"
+                    /></a>
+                    <ul class="dropdown">
+                      <li class="li"><a href="#">Главная</a></li>
+                      <li class="li">
+                        <a href="#">Блог</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="li">
+                    <a href="#" class="help">Помощь</a>
+                  </li>
+                </ul>
+              </div>
+              <button
+                data-toggle="modal"
+                id="myModal"
+                class="button header__button header__button--hidden"
+              >
+                Получить
+              </button>
+            </div>
+
+            <div class="mobile-menu mobile-menu--hidden">
+              <button class="menu-button menu-button--mobile">
+                <span class="menu-button__line"></span>
+                <span class="menu-button__line"></span>
+                <span class="menu-button__line"></span>
+              </button>
+
+              <ul class="ul ul--mobile">
+                <li class="li li--mobile home"><a href="#">Домой</a></li>
+                <li class="li li--mobile">
+                  <a href="#" class="lending li li--mobile"
+                    >Лендинги <img src="img/angle-down.svg" alt="Angle-down"
+                  /></a>
+                </li>
+
+                <li class="li li--mobile"><a href="#">Продающие</a></li>
+                <li class="li li--mobile"><a href="#">Подписные</a></li>
+                <li class="li li--mobile li--mobile--info">
+                  <a href="#">Информационные</a>
+                </li>
+                <li class="li li--mobile">
+                  <a href="#" class="page li li--mobile"
+                    >Страницы <img src="img/angle-down.svg" alt="Angle-down"
+                  /></a>
+                </li>
+
+                <li class="li li--mobile"><a href="#">Главная</a></li>
+                <li class="li li--mobile li--mobile--blog">
+                  <a href="#">Блог</a>
+                </li>
+                <li class="li li--mobile help">
+                  <a href="#" class="help">Помощь</a>
+                </li>
+              </ul>
+              <button
+                data-toggle="modal"
+                id="myModal-1"
+                class="button header__button header__button--mobile"
+              >
+                Получить
+              </button>
+            </div>
+
+            <button class="menu-button">
+              <span class="menu-button__line"></span>
+              <span class="menu-button__line"></span>
+              <span class="menu-button__line"></span>
+            </button>
+          </div>
+
+          <!-- /.header-top -->
+          <h1 class="header__title">Отдел новостей</h1>
+          <div class="header-main">
+            <form action="#" class="search header__search">
+              <input
+                type="text"
+                class="search__input"
+                placeholder="Поиск постов"
+              />
+              <img
+                src="img/search.svg"
+                alt="Icon: search"
+                class="search__icon"
+              />
+              <button class="search__button">Поиск</button>
+            </form>
+            <button class="search-button search-button--mobile">Поиск</button>
+            <div class="popular">
+              <span class="popular-tags">Популярные Тэги :</span>
+              <a href="#" class="tags-design">Design</a>
+              <a href="#" class="tags-exp">User Experience</a>
+              <a href="#" class="tags-interfaces">User interfaces</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg
+        width="2160"
+        height="263"
+        viewBox="0 0 2160 263"
+        preserveAspectRatio="none"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M2160 262.5H0V0C360 80 720 120 1080 120C1440 120 1800 80 2160 0V262.5Z"
+          fill="white"
+        />
+      </svg>
+    </header>
+    <section class="featured">
+      <div class="container">
+        <div class="cheap-airline">
+          <div class="featured-left">
+            <img
+              src="img/featured.png"
+              alt="Cheap flights"
+              class="featured-image"
+            />
+          </div>
+          <div class="featured-right">
+            <span class="offer featured-offer">Предложения</span>
+            <h2>
+              <a href="secondary.html" class="featured-title">
+                Дешевые Авиабилеты - Отличный Способ Сэкономить
+              </a>
+            </h2>
+            <p class="featured-description">
+              В этом цифровом поколении, где информацию можно легко получить за
+              секунды, визитки ...
+            </p>
+            <div class="featured-author">
+              <img
+                src="img/avatar-author.png"
+                alt="Avatar: author__avatar"
+                class="featured-author__avatar"
+              />
+              <div class="featured-info">
+                <div class="featured-author__description">
+                  <span class="featured-author__name">Viola Manisa</span>
+                  <span class="featured-author__verified"
+                    ><img
+                      src="img/verified.svg"
+                      alt="Icon: verified"
+                      class="verified"
+                    />Verified writer</span
+                  >
+                </div>
+                <span class="featured-author__date">02 May</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--/.featured-->
+    <section class="popular-article">
+      <div class="container">
+        <h2 class="popular-title">Популярные статьи</h2>
+        <div class="popular-info">
+          <p class="popular-description">
+            Мы делимся общими тенденциями, стратегическими идеями, мнениями,
+            короткими и длинными историями команды, стоящей за компанией.
+          </p>
+          <button class="button popular-button">
+            Смотреть все
+            <img src="img/arrow-right.svg" alt="Icon: arrow right" />
+          </button>
+        </div>
+        <div class="popular-card">
+          <a href="secondary.html" class="popular-card-1"
+            ><span class="offer popular-offer">Предложения</span>
+            <h3 class="popular-subtitle">
+              Как защитить свою семью от угарного газа
+            </h3>
+            <div class="featured-author">
+              <img
+                src="img/avatar-author.png"
+                alt="Avatar: author__avatar"
+                class="featured-author__avatar"
+              />
+              <div class="featured-info">
+                <div class="featured-author__description">
+                  <span
+                    class="featured-author__name featured-author__name--light"
+                    >Viola Manisa</span
+                  >
+                  <span
+                    class="featured-author__verified featured-author__verified--light"
+                    ><img
+                      src="img/verified.svg"
+                      alt="Icon: verified"
+                      class="verified"
+                    />Verified writer</span
+                  >
+                </div>
+                <span class="featured-author__date featured-author__date--light"
+                  >02 May</span
+                >
+              </div>
+            </div></a
+          >
+          <a href="secondary.html" class="popular-card-2"
+            ><span class="offer popular-offer">Предложения</span>
+            <h3 class="popular-subtitle popular-subtitle--mb3">
+              Материнство - самая трудная и лучшая работа на свете
+            </h3>
+            <div class="featured-author">
+              <img
+                src="img/popular-avatar-2.png"
+                alt="Avatar: author__avatar"
+                class="featured-author__avatar"
+              />
+              <div class="featured-info">
+                <div class="featured-author__description">
+                  <span
+                    class="featured-author__name featured-author__name--light"
+                    >Joshua William</span
+                  >
+                  <span
+                    class="featured-author__verified featured-author__verified--light"
+                    ><img
+                      src="img/verified.svg"
+                      alt="Icon: verified"
+                      class="verified"
+                    />Verified writer</span
+                  >
+                </div>
+                <span class="featured-author__date featured-author__date--light"
+                  >02 May</span
+                >
+              </div>
+            </div>
+          </a>
+        </div>
+        <button class="button popular-button popular-button--mobile">
+          Смотреть все
+          <img src="img/arrow-right.svg" alt="Icon: arrow right" />
+        </button>
+      </div>
+    </section>
+    <!--/.popular-article-->
+    <section class="latest-article">
+      <div class="container">
+        <h2 class="popular-title">Последние статьи</h2>
+        <div class="popular-info popular-info--latest">
+          <p class="popular-description popular-description--latest">
+            Вот чем мы занимались в последнее время.
+          </p>
+          <button class="button popular-button popular-button--latest">
+            Смотреть все
+            <img src="img/arrow-right.svg" alt="Icon: arrow right" />
+          </button>
+        </div>
+        <div class="latest-card">
+          <a href="secondary.html" class="latest-card-1">
+            <h3 class="latest-title card-1-title">Будущее Работы</h3>
+            <p class="latest-description">
+              Большинство людей будут работать на рабочих местах, которых
+              сегодня не существует.
+            </p>
+            <div class="featured-author">
+              <img
+                src="img/latest-avatar-1.png"
+                alt="Avatar: author__avatar"
+                class="featured-author__avatar"
+              />
+              <div class="featured-info">
+                <div class="featured-author__description">
+                  <span
+                    class="featured-author__name featured-author__name--light"
+                    >Lina Hicks</span
+                  >
+                  <span
+                    class="featured-author__verified featured-author__verified--light"
+                    ><img
+                      src="img/verified.svg"
+                      alt="Icon: verified"
+                      class="verified"
+                    />Verified writer</span
+                  >
+                </div>
+                <span class="featured-author__date featured-author__date--light"
+                  >02 May</span
+                >
+              </div>
+            </div></a
+          >
+          <!--card1-->
+          <a href="secondary.html" class="latest-card-2">
+            <h3 class="latest-title">Будущее Данных</h3>
+            <p class="latest-description card-2-description">
+              Благодаря нескончаемым объемам данных и количеству инсайтов
+            </p>
+            <div class="featured-author">
+              <img
+                src="img/latest-avatar-2.png"
+                alt="Avatar: author__avatar"
+                class="featured-author__avatar"
+              />
+              <div class="featured-info">
+                <div class="featured-author__description">
+                  <span
+                    class="featured-author__name featured-author__name--light"
+                    >Tyler Murray</span
+                  >
+                  <span
+                    class="featured-author__verified featured-author__verified--light"
+                    ><img
+                      src="img/verified.svg"
+                      alt="Icon: verified"
+                      class="verified"
+                    />Verified writer</span
+                  >
+                </div>
+                <span class="featured-author__date featured-author__date--light"
+                  >02 May</span
+                >
+              </div>
+            </div></a
+          >
+          <!--card2-->
+          <a href="secondary.html" class="latest-card-3">
+            <h3 class="latest-title">Будущее Обучения</h3>
+            <p class="latest-description card-3-description">
+              Постоянная способность учиться будет на самых важных навыках.
+            </p>
+            <div class="featured-author">
+              <img
+                src="img/latest-avatar-2.png"
+                alt="Avatar: author__avatar"
+                class="featured-author__avatar"
+              />
+              <div class="featured-info">
+                <div class="featured-author__description">
+                  <span
+                    class="featured-author__name featured-author__name--light"
+                    >Warren Casey</span
+                  >
+                  <span
+                    class="featured-author__verified featured-author__verified--light"
+                    ><img
+                      src="img/verified.svg"
+                      alt="Icon: verified"
+                      class="verified"
+                    />Verified writer</span
+                  >
+                </div>
+                <span class="featured-author__date featured-author__date--light"
+                  >02 May</span
+                >
+              </div>
+            </div></a
+          >
+          <!--card3-->
+        </div>
+        <button class="button popular-button popular-button--mobile">
+          Смотреть все
+          <img src="img/arrow-right.svg" alt="Icon: arrow right" />
+        </button>
+      </div>
+    </section>
+    <!-- /.latest-article -->
+    <section class="case-article">
+      <div class="container">
+        <h2 class="popular-title popular-title--case">Примеры из практики</h2>
+        <div class="popular-info popular-info--case">
+          <p class="popular-description popular-description--latest">
+            Вот чем мы занимались в последнее время.
+          </p>
+          <button class="button popular-button popular-button--case">
+            Смотреть все
+            <img src="img/arrow-right.svg" alt="Icon: arrow right" />
+          </button>
+        </div>
+      </div>
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <div class="cheap-airline cheap-airline--slider">
+              <div class="featured-left">
+                <img
+                  src="img/case-studies.png"
+                  alt="Cheap flights"
+                  class="featured-image"
+                />
+              </div>
+              <div class="featured-right featured-right--case">
+                <span class="offer featured-offer case-offer">Предложения</span>
+                <a href="secondary.html" class="featured-title">
+                  Дешевые Авиабилеты - Отличный Способ Сэкономить
+                </a>
+                <p class="featured-description">
+                  В этом цифровом поколении, где информацию можно легко получить
+                  за секунды, визитки ...
+                </p>
+                <div class="featured-author">
+                  <img
+                    src="img/avatar-author.png"
+                    alt="Avatar: author__avatar"
+                    class="featured-author__avatar"
+                  />
+                  <div class="featured-info">
+                    <div class="featured-author__description">
+                      <span class="featured-author__name">Viola Manisa</span>
+                      <span class="featured-author__verified"
+                        ><img
+                          src="img/verified.svg"
+                          alt="Icon: verified"
+                          class="verified"
+                        />Verified writer</span
+                      >
+                    </div>
+                    <span class="featured-author__date">02 May</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cheap-airline cheap-airline--slider">
+              <div class="featured-left">
+                <img
+                  src="img/featured.png"
+                  alt="Cheap flights"
+                  class="featured-image"
+                />
+              </div>
+              <div class="featured-right featured-right--case">
+                <span class="offer featured-offer case-offer">Предложения</span>
+                <a href="secondary.html" class="featured-title">
+                  Дешевые Авиабилеты - Отличный Способ Сэкономить
+                </a>
+                <p class="featured-description">
+                  В этом цифровом поколении, где информацию можно легко получить
+                  за секунды, визитки ...
+                </p>
+                <div class="featured-author">
+                  <img
+                    src="img/avatar-author.png"
+                    alt="Avatar: author__avatar"
+                    class="featured-author__avatar"
+                  />
+                  <div class="featured-info">
+                    <div class="featured-author__description">
+                      <span class="featured-author__name">Viola Manisa</span>
+                      <span class="featured-author__verified"
+                        ><img
+                          src="img/verified.svg"
+                          alt="Icon: verified"
+                          class="verified"
+                        />Verified writer</span
+                      >
+                    </div>
+                    <span class="featured-author__date">02 May</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="cheap-airline cheap-airline--slider">
+              <div class="featured-left">
+                <img
+                  src="img/featured.png"
+                  alt="Cheap flights"
+                  class="featured-image"
+                />
+              </div>
+              <div class="featured-right featured-right--case">
+                <span class="offer featured-offer case-offer">Предложения</span>
+                <a href="secondary.html" class="featured-title">
+                  Дешевые Авиабилеты - Отличный Способ Сэкономить
+                </a>
+                <p class="featured-description">
+                  В этом цифровом поколении, где информацию можно легко получить
+                  за секунды, визитки ...
+                </p>
+                <div class="featured-author">
+                  <img
+                    src="img/avatar-author.png"
+                    alt="Avatar: author__avatar"
+                    class="featured-author__avatar"
+                  />
+                  <div class="featured-info">
+                    <div class="featured-author__description">
+                      <span class="featured-author__name">Viola Manisa</span>
+                      <span class="featured-author__verified"
+                        ><img
+                          src="img/verified.svg"
+                          alt="Icon: verified"
+                          class="verified"
+                        />Verified writer</span
+                      >
+                    </div>
+                    <span class="featured-author__date">02 May</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="case-button case-button-prev"></div>
+        <div class="case-button case-button-next"></div>
+      </div>
+      <button class="button popular-button popular-button--mobile">
+        Смотреть все
+        <img src="img/arrow-right.svg" alt="Icon: arrow right" />
+      </button>
+    </section>
+    <section class="all-article">
+      <div class="container">
+        <h2 class="popular-title">Все статьи</h2>
+        <div class="popular-info popular-info--all">
+          <p class="popular-description popular-description--all">
+            Мы делимся общими тенденциями, стратегическими идеями, мнениями,
+            короткими и длинными историями команды, стоящей за компанией.
+          </p>
+        </div>
+        <div class="popular-card popular-card--all">
+          <a href="secondary.html" class="popular-card-1 popular-card-1--all"
+            ><span class="offer popular-offer popular-offer--all"
+              >Предложения</span
+            >
+            <h3 class="popular-subtitle">
+              Как защитить свою семью от угарного газа
+            </h3>
+            <div class="featured-author">
+              <img
+                src="img/avatar-author.png"
+                alt="Avatar: author__avatar"
+                class="featured-author__avatar"
+              />
+              <div class="featured-info">
+                <div class="featured-author__description">
+                  <span
+                    class="featured-author__name featured-author__name--light"
+                    >Viola Manisa</span
+                  >
+                  <span
+                    class="featured-author__verified featured-author__verified--light"
+                    ><img
+                      src="img/verified.svg"
+                      alt="Icon: verified"
+                      class="verified"
+                    />Verified writer</span
+                  >
+                </div>
+                <span class="featured-author__date featured-author__date--light"
+                  >02 May</span
+                >
+              </div>
+            </div></a
+          >
+          <a href="secondary.html" class="popular-card-2 popular-card-2--all"
+            ><span class="offer popular-offer popular-offer--all"
+              >Предложения</span
+            >
+            <h3 class="popular-subtitle popular-subtitle--mb3">
+              Материнство - самая трудная и лучшая работа на свете
+            </h3>
+            <div class="featured-author">
+              <img
+                src="img/popular-avatar-2.png"
+                alt="Avatar: author__avatar"
+                class="featured-author__avatar"
+              />
+              <div class="featured-info">
+                <div class="featured-author__description">
+                  <span
+                    class="featured-author__name featured-author__name--light"
+                    >Joshua William</span
+                  >
+                  <span
+                    class="featured-author__verified featured-author__verified--light"
+                    ><img
+                      src="img/verified.svg"
+                      alt="Icon: verified"
+                      class="verified"
+                    />Verified writer</span
+                  >
+                </div>
+                <span class="featured-author__date featured-author__date--light"
+                  >02 May</span
+                >
+              </div>
+            </div>
+          </a>
+        </div>
+        <div class="latest-card latest-card--all">
+          <a href="secondary.html" class="latest-card-1 latest-card-1--all">
+            <h3 class="latest-title card-1-title">Будущее Работы</h3>
+            <p class="latest-description">
+              Большинство людей будут работать на рабочих местах, которых
+              сегодня не существует.
+            </p>
+            <div class="featured-author">
+              <img
+                src="img/latest-avatar-1.png"
+                alt="Avatar: author__avatar"
+                class="featured-author__avatar"
+              />
+              <div class="featured-info">
+                <div class="featured-author__description">
+                  <span
+                    class="featured-author__name featured-author__name--light"
+                    >Lina Hicks</span
+                  >
+                  <span
+                    class="featured-author__verified featured-author__verified--light"
+                    ><img
+                      src="img/verified.svg"
+                      alt="Icon: verified"
+                      class="verified"
+                    />Verified writer</span
+                  >
+                </div>
+                <span class="featured-author__date featured-author__date--light"
+                  >02 May</span
+                >
+              </div>
+            </div></a
+          >
+          <!--card1-->
+
+          <a href="secondary.html" class="latest-card-2 latest-card-2--mobile">
+            <h3 class="latest-title">Будущее Данных</h3>
+            <p class="latest-description card-2-description">
+              Благодаря нескончаемым объемам данных и количеству инсайтов
+            </p>
+            <div class="featured-author">
+              <img
+                src="img/latest-avatar-1.png"
+                alt="Avatar: author__avatar"
+                class="featured-author__avatar"
+              />
+              <div class="featured-info">
+                <div class="featured-author__description">
+                  <span
+                    class="featured-author__name featured-author__name--light"
+                    >Tyler Murray</span
+                  >
+                  <span
+                    class="featured-author__verified featured-author__verified--light"
+                    ><img
+                      src="img/verified.svg"
+                      alt="Icon: verified"
+                      class="verified"
+                    />Verified writer</span
+                  >
+                </div>
+                <span class="featured-author__date featured-author__date--light"
+                  >02 May</span
+                >
+              </div>
+            </div></a
+          >
+
+          <a href="secondary.html" class="latest-card-2 latest-card-2--all">
+            <h3 class="latest-title">Будущее Данных</h3>
+            <p class="latest-description card-2-description">
+              Благодаря нескончаемым объемам данных и количеству инсайтов
+            </p>
+            <div class="featured-author">
+              <img
+                src="img/latest-avatar-2.png"
+                alt="Avatar: author__avatar"
+                class="featured-author__avatar"
+              />
+              <div class="featured-info">
+                <div class="featured-author__description">
+                  <span
+                    class="featured-author__name featured-author__name--light"
+                    >Tyler Murray</span
+                  >
+                  <span
+                    class="featured-author__verified featured-author__verified--light"
+                    ><img
+                      src="img/verified.svg"
+                      alt="Icon: verified"
+                      class="verified"
+                    />Verified writer</span
+                  >
+                </div>
+                <span class="featured-author__date featured-author__date--light"
+                  >02 May</span
+                >
+              </div>
+            </div></a
+          >
+          <!--card2-->
+
+          <a href="secondary.html" class="latest-card-2 latest-card-2--mobiled">
+            <h3 class="latest-title">Будущее Обучения</h3>
+            <p class="latest-description card-2-description">
+              Постоянная способность учиться будет на самых важных навыках.
+            </p>
+            <div class="featured-author">
+              <img
+                src="img/latest-avatar-2.png"
+                alt="Avatar: author__avatar"
+                class="featured-author__avatar"
+              />
+              <div class="featured-info">
+                <div class="featured-author__description">
+                  <span
+                    class="featured-author__name featured-author__name--light"
+                    >Tyler Murray</span
+                  >
+                  <span
+                    class="featured-author__verified featured-author__verified--light"
+                    ><img
+                      src="img/verified.svg"
+                      alt="Icon: verified"
+                      class="verified"
+                    />Verified writer</span
+                  >
+                </div>
+                <span class="featured-author__date featured-author__date--light"
+                  >02 May</span
+                >
+              </div>
+            </div></a
+          >
+
+          <a href="secondary.html" class="latest-card-3 latest-card-3--all">
+            <h3 class="latest-title">Будущее Обучения</h3>
+            <p class="latest-description card-3-description">
+              Постоянная способность учиться будет на самых важных навыках.
+            </p>
+            <div class="featured-author">
+              <img
+                src="img/all-article-avatar-5.png"
+                alt="Avatar: author__avatar"
+                class="featured-author__avatar"
+              />
+              <div class="featured-info">
+                <div class="featured-author__description">
+                  <span
+                    class="featured-author__name featured-author__name--light"
+                    >Warren Casey</span
+                  >
+                  <span
+                    class="featured-author__verified featured-author__verified--light"
+                    ><img
+                      src="img/verified.svg"
+                      alt="Icon: verified"
+                      class="verified"
+                    />Verified writer</span
+                  >
+                </div>
+                <span class="featured-author__date featured-author__date--light"
+                  >02 May</span
+                >
+              </div>
+            </div></a
+          >
+          <!--card3-->
+
+          <a href="secondary.html" class="latest-card-3 latest-card-3--mobile">
+            <h3 class="latest-title">Будущее Обучения</h3>
+            <p class="latest-description card-3-description">
+              Постоянная способность учиться будет на самых важных навыках.
+            </p>
+            <div class="featured-author">
+              <img
+                src="img/all-article-avatar-5.png"
+                alt="Avatar: author__avatar"
+                class="featured-author__avatar"
+              />
+              <div class="featured-info">
+                <div class="featured-author__description">
+                  <span
+                    class="featured-author__name featured-author__name--light"
+                    >Warren Casey</span
+                  >
+                  <span
+                    class="featured-author__verified featured-author__verified--light"
+                    ><img
+                      src="img/verified.svg"
+                      alt="Icon: verified"
+                      class="verified"
+                    />Verified writer</span
+                  >
+                </div>
+                <span class="featured-author__date featured-author__date--light"
+                  >02 May</span
+                >
+              </div>
+            </div></a
+          >
+        </div>
+        <button class="button popular-button popular-button--all">
+          <span>Больше постов </span>
+          <img src="img/arrow-right.svg" alt="Icon: arrow right" />
+        </button>
+        <button class="button popular-button popular-button--mobile">
+          Смотреть все
+          <img src="img/arrow-right.svg" alt="Icon: arrow right" />
+        </button>
+      </div>
+
+      <div class="footer-svg">
+        <svg
+          class="footer-svg"
+          width="2160"
+          height="263"
+          viewBox="0 0 2160 263"
+          preserveAspectRatio="none"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            id="Wave"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M2160 262.5H0V0C360 80 720 120 1080 120C1440 120 1800 80 2160 0V262.5Z"
+            fill="#0D2436"
+          />
+        </svg>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="top-left">
+            <h3 class="left-title">
+              Получите наши истории на ваш почтовый ящик еженедельно.
+            </h3>
+            <div class="left-search">
+              <form
+                action="send.php"
+                method="POST"
+                class="search footer__search"
+              >
+                <input
+                  type="email"
+                  class="search__input search__input--footer"
+                  placeholder="Ваш Email"
+                  name="subscribe"
+                  required
+                />
+                <button
+                  class="search__button search__button--footer"
+                  type="submit"
+                >
+                  Начать
+                </button>
+              </form>
+            </div>
+            <p class="left-description">
+              Получите ответ завтра, если отправите его до 9 вечера сегодня.
+              Если мы получили после 9 вечера, мы получим ответ на следующий
+              день.
+            </p>
+          </div>
+          <div class="right-info">
+            <div class="top-right">
+              <img
+                src="img/footer-image.png"
+                alt="Footer image"
+                class="footer-image"
+              />
+              <a class="right-title">Лучшие статьи каждую неделю</a>
+              <p class="right-description">
+                Наши предложения по страхованию везде одинаковы.
+              </p>
+            </div>
+            <img src="img/grey-cube.svg" alt="Grey cube" class="grey-cube" />
+            <img src="img/blue-cube.svg" alt="Blue cube" class="blue-cube" />
+          </div>
+        </div>
+        <hr />
+        <div class="footer-bottom">
+          <div class="column-1">
+            <a href="index.html"
+              ><img src="img/logo.svg" alt="Logo: ehya" class="bottom-logo"
+            /></a>
+            <p class="bottom-description">
+              Создайте современный и креативный веб-сайт с crealand
+            </p>
+            <div class="social-links">
+              <a href="https://www.google.ru/" target="_blank">
+                <img
+                  src="img/google.svg"
+                  alt="Icon: google"
+                  class="social-links__google"
+              /></a>
+              <a href="https://twitter.com/" target="_blank"
+                ><img
+                  class="social-links__twitter"
+                  src="img/twitter.svg"
+                  alt="Icon: twitter"
+              /></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><img
+                  class="social-links__instagram"
+                  src="img/instagram.svg"
+                  alt="Icon: instagram"
+              /></a>
+              <a href="https://www.linkedin.cn/login" target="_blank"
+                ><img
+                  class="social-links__linkedin"
+                  src="img/linkedin.svg"
+                  alt="Icon: linkedin"
+              /></a>
+              <a href="https://www.youtube.com/" target="_blank">
+                <img
+                  class="social-links__youtube"
+                  src="img/youtube.svg"
+                  alt="Icon: youtube"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="column-2">
+            <h4 class="bottom-title">Продукт</h4>
+            <a class="bottom-link" href="#">Лендинг</a>
+            <a class="bottom-link" href="#">Функции</a>
+            <a class="bottom-link" href="#">Документация</a>
+            <a class="bottom-link" href="#">Скидки</a>
+            <a class="bottom-link" href="#">Расценки</a>
+          </div>
+          <div class="column-3">
+            <h4 class="bottom-title">Сервисы</h4>
+            <a class="bottom-link" href="#">Документация</a>
+            <a class="bottom-link" href="#">Дизайн</a>
+            <a class="bottom-link" href="#">Темы</a>
+            <a class="bottom-link" href="#">Иллюстрации</a>
+            <a class="bottom-link" href="#">UI Kit</a>
+          </div>
+          <div class="column-4">
+            <h4 class="bottom-title">Компания</h4>
+            <a class="bottom-link" href="#">О нас</a>
+            <a class="bottom-link" href="#">Условия </a>
+            <a class="bottom-link bottom-link--mobile" href="#"
+              >Политика конфиденциальности
+            </a>
+            <a class="bottom-link bottom-link--privacy" href="#"
+              >Privacy Policy</a
+            >
+            <a class="bottom-link" href="#">Careers</a>
+          </div>
+          <div class="column-5">
+            <h4 class="bottom-title">Более</h4>
+            <a class="bottom-link" href="#">Документация</a>
+            <a class="bottom-link" href="#">Лицензия </a>
+            <a class="bottom-link" href="#">Изменения</a>
+          </div>
+          <div class="column-6">
+            <h4 class="bottom-title">Ещё...</h4>
+            <a class="bottom-link" href="#">Документация</a>
+            <a class="bottom-link" href="#">Лицензия </a>
+            <a class="bottom-link" href="#">Изменения</a>
+          </div>
+        </div>
+        <div class="copyright">
+          <img src="img/heart.svg" alt="Icon: heart" class="copyright__image" />
+          <p class="copyright__description">
+            Copyright © 2019. Crafted with love.
+          </p>
+        </div>
+        <div class="column-7">
+          <a href="index.html"
+            ><img
+              src="img/logo.svg"
+              alt="Logo: ehya"
+              class="bottom-logo bottom-logo--mobile"
+          /></a>
+          <p class="bottom-description bottom-description--mobile">
+            Создайте современный и креативный веб-сайт с crealand
+          </p>
+          <div class="social-links">
+            <a href="https://www.google.ru/" target="_blank"
+              ><img
+                src="img/google.svg"
+                alt="Icon: google"
+                class="social-links__google"
+            /></a>
+            <a href="https://twitter.com/" target="_blank"
+              ><img
+                class="social-links__twitter"
+                src="img/twitter.svg"
+                alt="Icon: twitter"
+            /></a>
+            <a href="https://www.instagram.com/" target="_blank">
+              <img
+                class="social-links__instagram"
+                src="img/instagram.svg"
+                alt="Icon: instagram"
+              />
+            </a>
+            <a href="https://www.linkedin.cn/" target="_blank"
+              ><img
+                class="social-links__linkedin"
+                src="img/linkedin.svg"
+                alt="Icon: linkedin"
+            /></a>
+            <a href="https://www.youtube.com/" target="_blank"
+              ><img
+                class="social-links__youtube"
+                src="img/youtube.svg"
+                alt="Icon: youtube"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="Icon: close" />
+        </a>
+        <a href="index.html"
+          ><img src="img/logo.svg" alt="Logo: ehya" class="logo"
+        /></a>
+        <form action="send.php" method="POST" class="modal__form form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Ваше имя*"
+            name="name_modal"
+            minlength="2"
+            required
+          />
+          <input
+            type="tel"
+            class="input modal__input telephone"
+            placeholder="Номер телефона*"
+            name="phone_modal"
+            data-mask="+7(000)000-00-00"
+            data-mask-reverse="true"
+            minlength="16"
+            required
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email_modal"
+            required
+          />
+          <textarea
+            class="message modal__message"
+            placeholder="Сообщение"
+            name="message_modal"
+          ></textarea>
+          <div class="modal__required">
+            <button class="button modal__button" type="submit">
+              Отправить
+            </button>
+            <span class="modal__info">* Обязательные поля</span>
+          </div>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

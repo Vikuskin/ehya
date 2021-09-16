@@ -1,0 +1,264 @@
+.menu-button
+  display: none
+.mobile-menu
+  display: none
+.header
+  position: relative
+  margin: 0
+  min-height: 742px
+  &--secondary
+    min-height: 735px
+  &--thankyou
+    min-height: 535px
+  &-content
+    background-image: url(../img/hero.jpg)
+    background-repeat: no-repeat
+    object-fit: cover
+    min-height: 650px
+    width: 100%
+    object-position: bottom
+    background-size: 100%
+    background-position: center center
+    &--secondary
+      background-image: url(../img/hero-secondary.jpg)
+      background-position: center top
+  &-top
+    padding: 31px 0 26px 0
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-menu
+    display: flex
+    justify-content: space-between
+    align-items: center
+    &--visible
+      display: none
+  &-navigation
+    margin-right: 61px
+    margin-top: -5px
+  &__title
+    margin-top: 115px
+    font-family: Roboto
+    font-weight: bold
+    font-size: 48px
+    line-height: 60px
+    text-align: center
+    color: #ffffff
+    margin-bottom: 40px
+    letter-spacing: 0.2px
+    &--secondary
+      font-family: Roboto
+      font-weight: bold
+      font-size: 48px
+      line-height: 72px
+      text-align: center
+      letter-spacing: 0.2px
+      color: #FFFFFF
+      margin: auto
+      margin-top: 105px
+      max-width: 711px
+      margin-left: 23%
+  &-main
+    max-width: 760px
+    margin: auto
+.search
+  display: flex
+  position: relative
+  overflow: hidden
+  border-radius: 8px
+  align-items: center
+  justify-content: center
+  height: 56px
+  width: 760px
+  margin: auto
+  margin-bottom: 24px
+
+  &--comments
+    height: 64px
+    width: 750px
+    margin-top: 30px
+    margin-bottom: 86px
+  &__input
+    border: none
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    color: #959EAD
+    width: 760px
+    height: 56px
+    padding: 16px 120px 18px 52px
+    box-shadow: (0px 15px 25px rgba(0, 0, 0, 0.06))
+    &--comments
+      border: 1px solid #E5EAF4
+      border-radius: 8px
+      padding: 21px 175px 21px 72px
+      box-shadow: none
+      height: 60px
+  &__avatar
+    position: absolute
+    border-radius: 50%
+    width: 40px
+    height: 40px
+    object-fit: cover
+    top: 12px
+    left: 16px
+  &__icon
+    position: absolute
+    top: 20px
+    left: 20px
+  &__button
+    position: absolute
+    top: 8px
+    right: 8px
+    font-weight: bold
+    font-size: 16px
+    line-height: 22px
+    text-align: center
+    border-radius: 8px
+    background-color: #1565D8
+    color: #ffffff
+    border: none
+    padding: 9px 21px
+    cursor: pointer
+    &:hover
+      opacity: 0.8
+    &--comments
+      top: 12px
+      right: 12px
+      min-width: 154px
+      min-height: 22px
+      padding: 9px 0
+.search
+  &-button
+    &--mobile
+      display: none
+      position: static
+.popular
+  &-tags
+    font-weight: 600
+    font-size: 16px
+    line-height: 22px
+    margin-right: 11px
+.button
+  padding: 13px 24px
+  border: 2px solid #FFFFFF
+  border-radius: 8px
+  min-width: 131px
+  height: 48px
+  font-weight: bold
+  font-size: 16px
+  line-height: 22px
+  cursor: pointer
+.header
+  &__button
+    padding: 10px 24px
+.tags
+  &-design
+    margin-right: 14px
+    background-color: transparent
+    border: 1px solid #FFFFFF
+    border-radius: 4px
+    font-size: 14px
+    line-height: 20px
+    padding: 6px 18px
+    color: #ffffff
+    cursor: pointer
+    text-decoration: none
+    display: inline-block
+    &:hover
+      opacity: 0.8
+  &-exp
+    margin-right: 14px
+    background-color: transparent
+    border: 1px solid #FFFFFF
+    border-radius: 4px
+    font-size: 14px
+    line-height: 20px
+    padding: 6px 18px
+    color: #ffffff
+    cursor: pointer
+    text-decoration: none
+    display: inline-block
+    &:hover
+      opacity: 0.8
+  &-interfaces
+    background-color: transparent
+    border: 1px solid #FFFFFF
+    border-radius: 4px
+    font-size: 14px
+    line-height: 20px
+    padding: 6px 18px
+    color: #ffffff
+    cursor: pointer
+    text-decoration: none
+    display: inline-block
+    &:hover
+      opacity: 0.8
+.secondary
+  bottom: 80px !important
+.header svg
+  position: absolute
+  left: 0
+  bottom: -20px
+  width: 100%
+  height: 200px
+  text-decoration: none
+
+ul
+  background: transparent
+  list-style: none
+  margin: 0
+  padding-left: 0
+
+li
+  color: #fff
+  background: transparent
+  display: block
+  float: left
+  padding: 13px
+  position: relative
+  text-decoration: none
+  transition-duration: 0.5s
+
+li a
+  color: #fff
+  text-decoration: none
+  font-weight: 600
+  font-size: 16px
+  line-height: 22px
+
+li:hover
+  background: #0D2436
+  cursor: pointer
+
+ul li ul
+  background: #0D2436
+  visibility: hidden
+  opacity: 0
+  min-width: 100%
+  position: absolute
+  transition: all 0.5s ease
+  margin-top: 1rem
+  left: 0
+  display: none
+
+ul li:hover > ul,
+ul li ul:hover
+  visibility: visible
+  opacity: 1
+  display: block
+
+ul li::after
+  display: block
+  content: ""
+  height: 3px
+  width: 0%
+  background-color: #225384
+  transition: width 0.4s ease-in-out
+
+ul li:hover::after
+  width: 100%
+
+ul li ul li
+  clear: both
+  width: 100%

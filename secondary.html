@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Ehya</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link
+    rel="stylesheet"
+      type="text/css"
+      href="css/swiper-bundle.min.css"
+    >
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div id="toTop"><img src="img/arrow-top.png" alt="Arrow to top" /></div>
+    <header class="header header--secondary">
+      <div class="header-content header-content--secondary">
+        <div class="container">
+          <div class="header-top">
+            <div class="logo logo--hidden">
+              <a href="index.html">
+                <img src="img/logo.svg" alt="Logo: ehoy" class="logo" />
+              </a>
+            </div>
+            <div class="header-menu">
+              <div class="header-navigation header-navigation--hidden">
+                <ul class="ul ul--mobile">
+                  <li class="li li--mobile home">
+                    <a href="index.html">Домой</a>
+                  </li>
+                  <li class="li li--mobile">
+                    <a href="#" class="lending li li--mobile"
+                      >Лендинги <img src="img/angle-down.svg" alt="Angle-down"
+                    /></a>
+                    <ul class="dropdown dropdown--mobile">
+                      <li class="li li--mobile"><a href="#">Продающие</a></li>
+                      <li class="li li--mobile"><a href="#">Подписные</a></li>
+                      <li class="li li--mobile li--mobile--info">
+                        <a href="#">Информационные</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="li li--mobile">
+                    <a href="#" class="page li li--mobile"
+                      >Страницы <img src="img/angle-down.svg" alt="Angle-down"
+                    /></a>
+                    <ul class="dropdown dropdown--mobile">
+                      <li class="li li--mobile"><a href="#">Главная</a></li>
+                      <li class="li li--mobile li--mobile--blog">
+                        <a href="#">Блог</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="li li--mobile help">
+                    <a href="#" class="help">Помощь</a>
+                  </li>
+                </ul>
+              </div>
+              <button
+                data-toggle="modal"
+                id="myModal"
+                class="button header__button header__button--hidden"
+              >
+                Получить
+              </button>
+            </div>
+
+            <div class="mobile-menu mobile-menu--hidden">
+              <ul class="ul ul--mobile">
+                <li class="li li--mobile home"><a href="index.html">Домой</a></li>
+                <li class="li li--mobile">
+                  <a href="#" class="lending li li--mobile"
+                    >Лендинги <img src="img/angle-down.svg" alt="Angle-down"
+                  /></a>
+                </li>
+
+                <li class="li li--mobile"><a href="#">Продающие</a></li>
+                <li class="li li--mobile"><a href="#">Подписные</a></li>
+                <li class="li li--mobile li--mobile--info">
+                  <a href="#">Информационные</a>
+                </li>
+                <li class="li li--mobile">
+                  <a href="#" class="page li li--mobile"
+                    >Страницы <img src="img/angle-down.svg" alt="Angle-down"
+                  /></a>
+                </li>
+
+                <li class="li li--mobile"><a href="#">Главная</a></li>
+                <li class="li li--mobile li--mobile--blog">
+                  <a href="#">Блог</a>
+                </li>
+                <li class="li li--mobile help">
+                  <a href="#" class="help">Помощь</a>
+                </li>
+              </ul>
+              <button
+                data-toggle="modal"
+                id="myModal-1"
+                class="button header__button header__button--mobile"
+              >
+                Получить
+              </button>
+            </div>
+
+            <button class="menu-button">
+              <span class="menu-button__line"></span>
+              <span class="menu-button__line"></span>
+              <span class="menu-button__line"></span>
+            </button>
+          </div>
+
+          <!-- /.header-top -->
+          <h1 class="header__title header__title--secondary">
+            Дешевые авиабилеты - отличный способ сэкономить
+          </h1>
+        </div>
+      </div>
+      <svg
+        class="secondary"
+        width="2160"
+        height="263"
+        viewBox="0 0 2160 263"
+        preserveAspectRatio="none"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M2160 262.5H0V0C360 80 720 120 1080 120C1440 120 1800 80 2160 0V262.5Z"
+          fill="white"
+        />
+      </svg>
+    </header>
+    <section class="article">
+      <div class="container-secondary">
+        <aside class="aside">
+          <span class="aside-title">Share</span>
+          <div class="aside-links">
+            <a href="https://twitter.com/" target="_blank"
+              ><img
+                class="aside-links__twitter"
+                src="img/aside-twitter.svg"
+                alt="Icon: twitter"
+            /></a>
+            <a href="https://ru-ru.facebook.com/" target="_blank"
+              ><img
+                class="aside-links__facebook"
+                src="img/aside-facebook.svg"
+                alt="Icon: facebook"
+            /></a>
+            <a href="https://www.linkedin.cn/login" target="_blank"
+              ><img
+                class="aside-links__linkedin"
+                src="img/aside-linkedin.svg"
+                alt="Icon: linkedin"
+            /></a>
+            <a href="https://www.instagram.com/" target="_blank"
+              ><img
+                class="aside-links__instagram"
+                src="img/aside-instagram.svg"
+                alt="Icon: instagram"
+            /></a>
+          </div>
+        </aside>
+        <p class="article-description">
+          Посещение выставки может быть очень эффективным методом продвижения
+          вашей компании и ее продукции. И один из наиболее эффективных способов
+          оптимизировать показ вашей выставки и увеличить посещаемость вашего
+          стенда - это использование баннерных стендов.
+        </p>
+        <div class="featured-author featured-author--secondary">
+          <img
+            src="img/avatar-author.png"
+            alt="Avatar: author__avatar"
+            class="featured-author__avatar"
+          />
+          <div class="featured-info">
+            <div class="featured-author__description">
+              <span class="featured-author__name">Viola Manisa</span>
+              <span class="featured-author__verified"
+                ><img
+                  src="img/verified.svg"
+                  alt="Icon: verified"
+                  class="verified"
+                />Verified writer</span
+              >
+            </div>
+            <span class="featured-author__date featured-author__date--secondary"
+              >PUBLISHED ON MAY, 2 2019</span
+            >
+            <span class="featured-author__date featured-author__date--mobile"
+              >MAY, 2 2019</span
+            >
+          </div>
+        </div>
+        <figure>
+          <img
+            src="img/aticle-image.jpg"
+            alt="Article image"
+            class="article-image"
+          />
+          <figcaption>This is a caption on this photo for reference</figcaption>
+        </figure>
+        <h2 class="microsoft-title">
+          Microsoft Patch Management для домашних пользователей
+        </h2>
+        <p class="microsoft-description">
+          В прошлом месяце моя жена Энн Доу отвезла меня в Лас-Вегас, потому что
+          ей нужно было ехать на деловой съезд. Излишне говорить, что она пишет
+          путеводитель по казино, а я ненавижу азартные игры. Но ей это
+          нравится, и это тоже поддерживает нас, так что я пошел без проблем.
+          Сначала я был подавлен, но потом, поспрашивая и оглядываясь, я
+          обнаружил, что в Лас-Вегасе повеселился больше, чем я мог подумать. И
+          нет. Пока я был там, я не заходил ни в одно казино.
+        </p>
+        <h3 class="microsoft-subtitle">Развлекательная программа</h3>
+        <p class="microsoft-description microsoft-description--entertainment">
+          Одно из главных достоинств Лас-Вегаса, Рино и Атлантик-Сити (но
+          особенно Лас-Вегаса) - это количество доступных шоу. Вы можете увидеть
+          таких комиков высшего класса, как Джей Лено, Джерри Сайнфелд, Рэй
+          Романо, Тим Аллен и даже таких, как Билл Косби и Крис Рок. Если вы
+          увлекаетесь музыкой, вы можете посмотреть на певиц, таких как Селин
+          Дион, Мэрайя Кэри, Бритни Спирс, Кристина Агилера и Бейонк?, <br />
+          Исполнителей-мужчин, таких как Фил Коллинз, Эрик Клэптон, Snoopy Dog,
+          и таких групп, как Oasis и Bon Jovi. Я мог бы продолжать и продолжать,
+          но список бесконечен. Если вы увлекаетесь магией, вы можете наблюдать,
+          как фокусники, такие как Дэвид Копперфилд, делают свои дела в
+          нескольких метрах от вас. Все, что вам нравится, вы можете найти
+          здесь: от западной музыки до старинных песен и джаза, рока, от Heavy
+          Mettle до транса. Все, что вам нужно сделать, это посмотреть на
+          маршрут, предлагаемый во время вашего визита.
+        </p>
+        <h3 class="microsoft-subtitle microsoft-subtitle--food">Еда</h3>
+        <p class="microsoft-description microsoft-description--food">
+          С китайского на японский, с корейского на еврейский, и даже с
+          вегетарианскими и настоящими мясными заведениями, которые ждут каждого
+          вашего удовольствия в Вегасе. Не выбирайте дешевые и жареные в масле
+          блюда, которые подают бесплатно во время игры. Остановитесь на время и
+          насладитесь восхитительными пейзажами и запахами восточноазиатских или
+          европейских блюд. Что удивительно, так это то, что вы видите
+          способность человека смешиваться. Настоящий плавильный котел, если
+          можно так сказать.
+        </p>
+      </div>
+      <div class="swiper-container swiper-container--secondary">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper swiper-wrapper--secondary">
+          <!-- Slides -->
+          <div class="swiper-slide swiper-slide--secondary">
+            <figure class="figure-slide">
+              <img
+                src="img/slider.jpg"
+                alt="Image slider"
+                class="slider-image"
+              />
+              <figcaption class="figcaption-slide">
+                This is a caption on this photo for reference
+              </figcaption>
+            </figure>
+          </div>
+          <div class="swiper-slide swiper-slide--secondary">
+            <figure class="figure-slide">
+              <img
+                src="img/article-1.png"
+                alt="Image slider"
+                class="slider-image"
+              />
+              <figcaption class="figcaption-slide">
+                This is a caption on this photo for reference
+              </figcaption>
+            </figure>
+          </div>
+          <div class="swiper-slide swiper-slide--secondary">
+            <figure class="figure-slide">
+              <img
+                src="img/aticle-image.jpg"
+                alt="Image slider"
+                class="slider-image"
+              />
+              <figcaption class="figcaption-slide">
+                This is a caption on this photo for reference
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div
+          class="case-button case-button--secondary case-button-prev case-button-prev--secondary"
+        ></div>
+        <div
+          class="case-button case-button--secondary case-button-next case-button-next--secondary"
+        ></div>
+      </div>
+      <div class="container-secondary">
+        <h2 class="vegas-title">
+          Достопримечательности, которые вы должны увидеть во время своего
+          визита в Вегас:
+        </h2>
+        <p class="vegas-description">
+          Плотина Гувера и Большой каньон: забронируйте себе место в любой из
+          множества доступных обзорных экскурсий и посмотрите архитектурное чудо
+          - плотину Гувера, построенную над Большим каньоном, которая также
+          является грандиозным зрелищем, которое стоит увидеть отдельно. Черный
+          каньон - еще одно место, которое нужно увидеть, как и озеро Мид,
+          которое так красиво только потому, что это водоем, окруженный
+          пустынной природой. Река Колорадо: <br />
+          Глядя на плотину и каньон сверху, чтобы увидеть истинную красоту реки,
+          нужно спуститься вниз. Река Колорадо отлично подходит для рафтинга и
+          водных видов спорта, но вам не обязательно принимать участие, если это
+          не для вас.
+        </p>
+        <h3 class="vegas-subtitle">Bonnie Springs</h3>
+        <p class="vegas-description vegas-description--mb76">
+          Кто не может устоять перед поездкой в ​​один из старых городов,
+          подобных тем, что в западных фильмах о стрельбе из оружия? Вашим
+          пунктом назначения должна быть Старая Невада. Там вы сможете
+          насладиться старым западным городом прямо посреди каньона Ред-Рок. Они
+          тоже проводят западные буллиты, так что будьте готовы, партнер! Я мог
+          бы продолжать и рассказывать о других достопримечательностях, таких
+          как тематический парк в Circus Circus, природный заповедник Гилкриз,
+          заповедник для наблюдения за птицами Хендерсон и Mt. Чарльстон, но я
+          думаю, вы поняли.
+        </p>
+      </div>
+      <div class="quote">
+        <div class="circle"></div>
+        <div class="quote__description">
+          <img src="img/quote-left.svg" alt="Quote" class="quote__icon" />
+          <p class="quote__text">
+            Многие люди сказали бы, что это абсолютное безумие продолжать делать
+            одно и то же, раз за разом, ожидая получить другой результат или
+            что-то другое случится.
+          </p>
+          <p class="quote__info">
+            Даниэль принимает гостей в Джокьякарте, чтобы заработать
+            дополнительные деньги
+          </p>
+        </div>
+      </div>
+      <div class="container-secondary">
+        <img
+          src="img/quote-image.jpg"
+          alt="Quote avatar"
+          class="quote-avatar"
+        />
+        <p class="vegas-description vegas-description--mt114">
+          Плотина Гувера и Большой каньон: забронируйте себе место в любой из
+          множества доступных обзорных экскурсий и посмотрите архитектурное чудо
+          - плотину Гувера, построенную над Большим каньоном, которая также
+          является грандиозным зрелищем, которое стоит увидеть отдельно. Черный
+          каньон - еще одно место, которое нужно увидеть, как и озеро Мид,
+          которое так красиво только потому, что это водоем, окруженный
+          пустынной природой. Река Колорадо: <br />
+          Глядя на плотину и каньон сверху, чтобы увидеть истинную красоту реки,
+          нужно спуститься вниз. Река Колорадо отлично подходит для рафтинга и
+          водных видов спорта, но вам не обязательно принимать участие, если это
+          не для вас.
+        </p>
+
+        <div class="article-gallery">
+          <div class="gallery-left">
+            <img
+              src="img/article-1.png"
+              alt="Gallery image"
+              class="gallery-image-1"
+            />
+          </div>
+          <div class="gallery-right">
+            <img
+              src="img/article-2.png"
+              alt="Gallery image"
+              class="gallery-image-2"
+            />
+            <img
+              src="img/article-3.png"
+              alt="Gallery image"
+              class="gallery-image-3"
+            />
+          </div>
+        </div>
+        <p class="gallery-description">
+          This is a caption on this photo for reference
+        </p>
+
+        <h3 class="vegas-subtitle vegas-subtitle--bonnie">Bonnie Springs</h3>
+        <p class="vegas-description vegas-description--latest">
+          Кто не может устоять перед поездкой в ​​один из старых городов,
+          подобных тем, что в западных фильмах о стрельбе из оружия? Вашим
+          пунктом назначения должна быть Старая Невада. Там вы сможете
+          насладиться старым западным городом прямо посреди каньона Ред-Рок. Они
+          тоже проводят западные буллиты, так что будьте готовы, партнер! Я мог
+          бы продолжать и рассказывать о других достопримечательностях, таких
+          как тематический парк в Circus Circus, природный заповедник Гилкриз,
+          заповедник для наблюдения за птицами Хендерсон и Mt. Чарльстон, но я
+          думаю, вы поняли.
+        </p>
+
+        <aside class="aside-bottom">
+          <span class="aside-title aside-title--bottom">Share</span>
+          <div class="aside-links aside-links--bottom">
+            <img
+              class="aside-links__twitter"
+              src="img/aside-twitter.svg"
+              alt="Icon: twitter"
+            /><img
+              class="aside-links__facebook"
+              src="img/aside-facebook.svg"
+              alt="Icon: facebook"
+            /><img
+              class="aside-links__linkedin"
+              src="img/aside-linkedin.svg"
+              alt="Icon: linkedin"
+            /><img
+              class="aside-links__instagram"
+              src="img/aside-instagram.svg"
+              alt="Icon: instagram"
+            />
+          </div>
+        </aside>
+
+        <hr class="hr-secondary" />
+        <div class="featured-author featured-author--article">
+          <img
+            src="img/avatar-author.png"
+            alt="Avatar: author__avatar"
+            class="featured-author__avatar"
+          />
+          <div class="featured-info">
+            <div class="featured-author__description">
+              <span class="featured-author__name">Viola Manisa</span>
+              <span class="featured-author__verified"
+                ><img
+                  src="img/verified.svg"
+                  alt="Icon: verified"
+                  class="verified"
+                />Verified writer</span
+              >
+            </div>
+            <span class="featured-author__date featured-author__date--secondary"
+              >PUBLISHED ON MAY, 2 2019</span
+            >
+            <span class="featured-author__date featured-author__date--mobile"
+              >MAY, 2 2019</span
+            >
+          </div>
+        </div>
+        <hr class="hr-secondary hr-secondary--last" />
+
+        <h2 class="comments-title">Комментарии</h2>
+        <div class="comments">
+          <div class="comments-info">
+            <img
+              src="img/alexis-avatar.png"
+              alt="Avatar: Alexis Ren"
+              class="comments__avatar"
+            />
+            <div class="comments-description">
+              <span class="comments__name">Alexis Ren</span>
+              <span class="comments__date">02 May</span>
+            </div>
+          </div>
+          <div class="comments-area">
+            <p class="comments__text">
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel met
+              scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+              vulputate at, tempus viverra turpis.
+            </p>
+          </div>
+        </div>
+
+        <div class="comments">
+          <div class="comments-info">
+            <img
+              src="img/elsie-avatar.png"
+              alt="Avatar: Elsie Scott"
+              class="comments__avatar"
+            />
+            <div class="comments-description">
+              <span class="comments__name">Elsie Scott</span>
+              <span class="comments__date">02 May</span>
+            </div>
+          </div>
+          <div class="comments-area">
+            <p class="comments__text comments__text--elsie">
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel metus
+              scelerisque ante sollicitudin.
+            </p>
+            <p class="comments__text comments__text--mobile">
+              Cras sit amet nibh libero, in gravida nulla. Nulla vel met
+              scelerisque ante sollicitudin. Cras purus odio, vestibulum in
+              vulputate at, tempus viverra turpis.
+            </p>
+          </div>
+        </div>
+
+        <form action="#" class="search search--comments">
+          <input
+            type="text"
+            class="search__input search__input--comments"
+            placeholder="Написать комментарий..."
+          />
+          <img
+            src="img/elsie-avatar.png"
+            alt="Avatar comments"
+            class="search__avatar"
+          />
+          <button class="search__button search__button--comments">
+            Комментировать
+          </button>
+        </form>
+        <button class="search-button search-button--comment">
+          Комментировать
+        </button>
+      </div>
+
+      <div class="footer-svg">
+        <svg
+          class="footer-svg"
+          width="2160"
+          height="263"
+          viewBox="0 0 2160 263"
+          preserveAspectRatio="none"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            id="Wave"
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M2160 262.5H0V0C360 80 720 120 1080 120C1440 120 1800 80 2160 0V262.5Z"
+            fill="#0D2436"
+          />
+        </svg>
+      </div>
+    </section>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top footer-top--secondary">
+          <div class="top-left">
+            <h3 class="left-title">
+              Получите наши истории на ваш почтовый ящик еженедельно.
+            </h3>
+            <div class="left-search">
+              <form
+                action="send.php"
+                method="POST"
+                class="search footer__search"
+              >
+                <input
+                  type="email"
+                  class="search__input search__input--footer"
+                  placeholder="Ваш Email"
+                  name="subscribe"
+                  required
+                />
+                <button
+                  class="search__button search__button--footer"
+                  type="submit"
+                >
+                  Начать
+                </button>
+              </form>
+            </div>
+            <p class="left-description">
+              Получите ответ завтра, если отправите его до 9 вечера сегодня.
+              Если мы получили после 9 вечера, мы получим ответ на следующий
+              день.
+            </p>
+          </div>
+          <div class="right-info">
+            <div class="top-right">
+              <img
+                src="img/footer-image.png"
+                alt="Footer image"
+                class="footer-image"
+              />
+              <a class="right-title">Лучшие статьи каждую неделю</a>
+              <p class="right-description">
+                Наши предложения по страхованию везде одинаковы.
+              </p>
+            </div>
+            <img src="img/grey-cube.svg" alt="Grey cube" class="grey-cube" />
+            <img src="img/blue-cube.svg" alt="Blue cube" class="blue-cube" />
+          </div>
+        </div>
+        <hr />
+        <div class="footer-bottom">
+          <div class="column-1">
+            <a href="index.html"
+              ><img src="img/logo.svg" alt="Logo: ehya" class="bottom-logo"
+            /></a>
+            <p class="bottom-description">
+              Создайте современный и креативный веб-сайт с crealand
+            </p>
+            <div class="social-links">
+              <a href="https://www.google.ru/" target="_blank">
+                <img
+                  src="img/google.svg"
+                  alt="Icon: google"
+                  class="social-links__google"
+              /></a>
+              <a href="https://twitter.com/" target="_blank"
+                ><img
+                  class="social-links__twitter"
+                  src="img/twitter.svg"
+                  alt="Icon: twitter"
+              /></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><img
+                  class="social-links__instagram"
+                  src="img/instagram.svg"
+                  alt="Icon: instagram"
+              /></a>
+              <a href="https://www.linkedin.cn/login" target="_blank"
+                ><img
+                  class="social-links__linkedin"
+                  src="img/linkedin.svg"
+                  alt="Icon: linkedin"
+              /></a>
+              <a href="https://www.youtube.com/" target="_blank">
+                <img
+                  class="social-links__youtube"
+                  src="img/youtube.svg"
+                  alt="Icon: youtube"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="column-2">
+            <h4 class="bottom-title">Продукт</h4>
+            <a class="bottom-link" href="#">Лендинг</a>
+            <a class="bottom-link" href="#">Функции</a>
+            <a class="bottom-link" href="#">Документация</a>
+            <a class="bottom-link" href="#">Скидки</a>
+            <a class="bottom-link" href="#">Расценки</a>
+          </div>
+          <div class="column-3">
+            <h4 class="bottom-title">Сервисы</h4>
+            <a class="bottom-link" href="#">Документация</a>
+            <a class="bottom-link" href="#">Дизайн</a>
+            <a class="bottom-link" href="#">Темы</a>
+            <a class="bottom-link" href="#">Иллюстрации</a>
+            <a class="bottom-link" href="#">UI Kit</a>
+          </div>
+          <div class="column-4">
+            <h4 class="bottom-title">Компания</h4>
+            <a class="bottom-link" href="#">О нас</a>
+            <a class="bottom-link" href="#">Условия </a>
+            <a class="bottom-link bottom-link--mobile" href="#"
+              >Политика конфиденциальности
+            </a>
+            <a class="bottom-link bottom-link--privacy" href="#"
+              >Privacy Policy</a
+            >
+            <a class="bottom-link" href="#">Careers</a>
+          </div>
+          <div class="column-5">
+            <h4 class="bottom-title">Более</h4>
+            <a class="bottom-link" href="#">Документация</a>
+            <a class="bottom-link" href="#">Лицензия </a>
+            <a class="bottom-link" href="#">Изменения</a>
+          </div>
+          <div class="column-6">
+            <h4 class="bottom-title">Ещё...</h4>
+            <a class="bottom-link" href="#">Документация</a>
+            <a class="bottom-link" href="#">Лицензия </a>
+            <a class="bottom-link" href="#">Изменения</a>
+          </div>
+        </div>
+        <div class="copyright">
+          <img src="img/heart.svg" alt="Icon: heart" class="copyright__image" />
+          <p class="copyright__description">
+            Copyright © 2019. Crafted with love.
+          </p>
+        </div>
+        <div class="column-7">
+          <a href="index.html"
+            ><img
+              src="img/logo.svg"
+              alt="Logo: ehya"
+              class="bottom-logo bottom-logo--mobile"
+          /></a>
+          <p class="bottom-description bottom-description--mobile">
+            Создайте современный и креативный веб-сайт с crealand
+          </p>
+          <div class="social-links">
+            <a href="https://www.google.ru/" target="_blank"
+              ><img
+                src="img/google.svg"
+                alt="Icon: google"
+                class="social-links__google"
+            /></a>
+            <a href="https://twitter.com/" target="_blank"
+              ><img
+                class="social-links__twitter"
+                src="img/twitter.svg"
+                alt="Icon: twitter"
+            /></a>
+            <a href="https://www.instagram.com/" target="_blank">
+              <img
+                class="social-links__instagram"
+                src="img/instagram.svg"
+                alt="Icon: instagram"
+              />
+            </a>
+            <a href="https://www.linkedin.cn/" target="_blank"
+              ><img
+                class="social-links__linkedin"
+                src="img/linkedin.svg"
+                alt="Icon: linkedin"
+            /></a>
+            <a href="https://www.youtube.com/" target="_blank"
+              ><img
+                class="social-links__youtube"
+                src="img/youtube.svg"
+                alt="Icon: youtube"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="Icon: close" />
+        </a>
+        <a href="index.html"
+          ><img src="img/logo.svg" alt="Logo: ehya" class="logo"
+        /></a>
+        <form action="send.php" method="POST" class="modal__form form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Ваше имя*"
+            name="name_modal"
+            minlength="2"
+            required
+          />
+          <input
+            type="tel"
+            class="input modal__input telephone"
+            placeholder="Номер телефона*"
+            name="phone_modal"
+            data-mask="+7(000)000-00-00"
+            data-mask-reverse="true"
+            minlength="16"
+            required
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email_modal"
+            required
+          />
+          <textarea
+            class="message modal__message"
+            placeholder="Сообщение"
+            name="message_modal"
+          ></textarea>
+          <div class="modal__required">
+            <button class="button modal__button" type="submit">
+              Отправить
+            </button>
+            <span class="modal__info">* Обязательные поля</span>
+          </div>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Ehya</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+    rel="stylesheet"
+      type="text/css"
+      href="css/swiper-bundle.min.css"
+    >
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,400&family=Roboto:wght@700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="toTop"><img src="img/arrow-top.png" alt="Arrow to top" /></div>
+
+    <header class="header">
+      <div class="header-content header-content--thankyou">
+        <div class="container">
+          <div class="header-top">
+            <div class="logo logo--hidden">
+              <a href="index.html">
+                <img src="img/logo.svg" alt="Logo: ehoy" class="logo" />
+              </a>
+            </div>
+            <div class="header-menu">
+              <div class="header-navigation header-navigation--hidden">
+                <ul class="ul ul--mobile">
+                  <li class="li li--mobile home"><a href="#">Домой</a></li>
+                  <li class="li li--mobile">
+                    <a href="#" class="lending li li--mobile"
+                      >Лендинги <img src="img/angle-down.svg" alt="Angle-down"
+                    /></a>
+                    <ul class="dropdown dropdown--mobile">
+                      <li class="li li--mobile"><a href="#">Продающие</a></li>
+                      <li class="li li--mobile"><a href="#">Подписные</a></li>
+                      <li class="li li--mobile li--mobile--info">
+                        <a href="#">Информационные</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="li li--mobile">
+                    <a href="#" class="page li li--mobile"
+                      >Страницы <img src="img/angle-down.svg" alt="Angle-down"
+                    /></a>
+                    <ul class="dropdown dropdown--mobile">
+                      <li class="li li--mobile"><a href="#">Главная</a></li>
+                      <li class="li li--mobile li--mobile--blog">
+                        <a href="#">Блог</a>
+                      </li>
+                    </ul>
+                  </li>
+                  <li class="li li--mobile help">
+                    <a href="#" class="help">Помощь</a>
+                  </li>
+                </ul>
+              </div>
+              <button
+                data-toggle="modal"
+                id="myModal"
+                class="button header__button header__button--hidden"
+              >
+                Получить
+              </button>
+            </div>
+
+            <div class="mobile-menu mobile-menu--hidden">
+              <ul class="ul ul--mobile">
+                <li class="li li--mobile home"><a href="#">Домой</a></li>
+                <li class="li li--mobile">
+                  <a href="#" class="lending li li--mobile"
+                    >Лендинги <img src="img/angle-down.svg" alt="Angle-down"
+                  /></a>
+                </li>
+
+                <li class="li li--mobile"><a href="#">Продающие</a></li>
+                <li class="li li--mobile"><a href="#">Подписные</a></li>
+                <li class="li li--mobile li--mobile--info">
+                  <a href="#">Информационные</a>
+                </li>
+                <li class="li li--mobile">
+                  <a href="#" class="page li li--mobile"
+                    >Страницы <img src="img/angle-down.svg" alt="Angle-down"
+                  /></a>
+                </li>
+
+                <li class="li li--mobile"><a href="#">Главная</a></li>
+                <li class="li li--mobile li--mobile--blog">
+                  <a href="#">Блог</a>
+                </li>
+                <li class="li li--mobile help">
+                  <a href="#" class="help">Помощь</a>
+                </li>
+              </ul>
+              <button
+                data-toggle="modal"
+                id="myModal-1"
+                class="button header__button header__button--mobile"
+              >
+                Получить
+              </button>
+            </div>
+
+            <button class="menu-button menu-button--mobile">
+              <span class="menu-button__line"></span>
+              <span class="menu-button__line"></span>
+              <span class="menu-button__line"></span>
+            </button>
+          </div>
+
+          <!-- /.header-top -->
+          <h1 class="header__title">Отдел новостей</h1>
+          <div class="header-main">
+            <form action="#" class="search header__search">
+              <input
+                type="text"
+                class="search__input"
+                placeholder="Поиск постов"
+              />
+              <img
+                src="img/search.svg"
+                alt="Icon: search"
+                class="search__icon"
+              />
+              <button class="search__button">Поиск</button>
+            </form>
+            <button class="search-button search-button--mobile">Поиск</button>
+            <div class="popular">
+              <span class="popular-tags">Популярные Тэги :</span>
+              <a href="#" class="tags-design">Design</a>
+              <a href="#" class="tags-exp">User Experience</a>
+              <a href="#" class="tags-interfaces">User interfaces</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <svg
+        width="2160"
+        height="263"
+        class="thankyou-svg"
+        viewBox="0 0 2160 263"
+        preserveAspectRatio="none"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M2160 262.5H0V0C360 80 720 120 1080 120C1440 120 1800 80 2160 0V262.5Z"
+          fill="white"
+        />
+      </svg>
+    </header>
+
+    <div class="container-secondary container-secondary--thankyou">
+      <h1 class="article-title">Спасибо за сообщение!</h1>
+      <p class="article-description">
+        Мы обязательно свяжемся с вами в ближайшее время
+      </p>
+      <a href="index.html" class="button-back">Назад</a>
+    </div>
+    <div class="footer-svg">
+      <svg
+        class="footer-svg"
+        width="2160"
+        height="263"
+        viewBox="0 0 2160 263"
+        preserveAspectRatio="none"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          id="Wave"
+          fill-rule="evenodd"
+          clip-rule="evenodd"
+          d="M2160 262.5H0V0C360 80 720 120 1080 120C1440 120 1800 80 2160 0V262.5Z"
+          fill="#0D2436"
+        />
+      </svg>
+    </div>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top">
+          <div class="top-left">
+            <h3 class="left-title">
+              Получите наши истории на ваш почтовый ящик еженедельно.
+            </h3>
+            <div class="left-search">
+              <form
+                action="send.php"
+                method="POST"
+                class="search footer__search"
+              >
+                <input
+                  type="email"
+                  class="search__input search__input--footer"
+                  placeholder="Ваш Email"
+                  name="subscribe"
+                  required
+                />
+                <button
+                  class="search__button search__button--footer"
+                  type="submit"
+                >
+                  Начать
+                </button>
+              </form>
+            </div>
+            <p class="left-description">
+              Получите ответ завтра, если отправите его до 9 вечера сегодня.
+              Если мы получили после 9 вечера, мы получим ответ на следующий
+              день.
+            </p>
+          </div>
+          <div class="right-info">
+            <div class="top-right">
+              <img
+                src="img/footer-image.png"
+                alt="Footer image"
+                class="footer-image"
+              />
+              <a class="right-title">Лучшие статьи каждую неделю</a>
+              <p class="right-description">
+                Наши предложения по страхованию везде одинаковы.
+              </p>
+            </div>
+            <img src="img/grey-cube.svg" alt="Grey cube" class="grey-cube" />
+            <img src="img/blue-cube.svg" alt="Blue cube" class="blue-cube" />
+          </div>
+        </div>
+        <hr />
+        <div class="footer-bottom">
+          <div class="column-1">
+            <a href="index.html"
+              ><img src="img/logo.svg" alt="Logo: ehya" class="bottom-logo"
+            /></a>
+            <p class="bottom-description">
+              Создайте современный и креативный веб-сайт с crealand
+            </p>
+            <div class="social-links">
+              <a href="https://www.google.ru/" target="_blank">
+                <img
+                  src="img/google.svg"
+                  alt="Icon: google"
+                  class="social-links__google"
+              /></a>
+              <a href="https://twitter.com/" target="_blank"
+                ><img
+                  class="social-links__twitter"
+                  src="img/twitter.svg"
+                  alt="Icon: twitter"
+              /></a>
+              <a href="https://www.instagram.com/" target="_blank"
+                ><img
+                  class="social-links__instagram"
+                  src="img/instagram.svg"
+                  alt="Icon: instagram"
+              /></a>
+              <a href="https://www.linkedin.cn/login" target="_blank"
+                ><img
+                  class="social-links__linkedin"
+                  src="img/linkedin.svg"
+                  alt="Icon: linkedin"
+              /></a>
+              <a href="https://www.youtube.com/" target="_blank">
+                <img
+                  class="social-links__youtube"
+                  src="img/youtube.svg"
+                  alt="Icon: youtube"
+                />
+              </a>
+            </div>
+          </div>
+          <div class="column-2">
+            <h4 class="bottom-title">Продукт</h4>
+            <a class="bottom-link" href="#">Лендинг</a>
+            <a class="bottom-link" href="#">Функции</a>
+            <a class="bottom-link" href="#">Документация</a>
+            <a class="bottom-link" href="#">Скидки</a>
+            <a class="bottom-link" href="#">Расценки</a>
+          </div>
+          <div class="column-3">
+            <h4 class="bottom-title">Сервисы</h4>
+            <a class="bottom-link" href="#">Документация</a>
+            <a class="bottom-link" href="#">Дизайн</a>
+            <a class="bottom-link" href="#">Темы</a>
+            <a class="bottom-link" href="#">Иллюстрации</a>
+            <a class="bottom-link" href="#">UI Kit</a>
+          </div>
+          <div class="column-4">
+            <h4 class="bottom-title">Компания</h4>
+            <a class="bottom-link" href="#">О нас</a>
+            <a class="bottom-link" href="#">Условия </a>
+            <a class="bottom-link bottom-link--mobile" href="#"
+              >Политика конфиденциальности
+            </a>
+            <a class="bottom-link bottom-link--privacy" href="#"
+              >Privacy Policy</a
+            >
+            <a class="bottom-link" href="#">Careers</a>
+          </div>
+          <div class="column-5">
+            <h4 class="bottom-title">Более</h4>
+            <a class="bottom-link" href="#">Документация</a>
+            <a class="bottom-link" href="#">Лицензия </a>
+            <a class="bottom-link" href="#">Изменения</a>
+          </div>
+          <div class="column-6">
+            <h4 class="bottom-title">Ещё...</h4>
+            <a class="bottom-link" href="#">Документация</a>
+            <a class="bottom-link" href="#">Лицензия </a>
+            <a class="bottom-link" href="#">Изменения</a>
+          </div>
+        </div>
+        <div class="copyright">
+          <img src="img/heart.svg" alt="Icon: heart" class="copyright__image" />
+          <p class="copyright__description">
+            Copyright © 2019. Crafted with love.
+          </p>
+        </div>
+        <div class="column-7">
+          <a href="index.html"
+            ><img
+              src="img/logo.svg"
+              alt="Logo: ehya"
+              class="bottom-logo bottom-logo--mobile"
+          /></a>
+          <p class="bottom-description bottom-description--mobile">
+            Создайте современный и креативный веб-сайт с crealand
+          </p>
+          <div class="social-links">
+            <a href="https://www.google.ru/" target="_blank"
+              ><img
+                src="img/google.svg"
+                alt="Icon: google"
+                class="social-links__google"
+            /></a>
+            <a href="https://twitter.com/" target="_blank"
+              ><img
+                class="social-links__twitter"
+                src="img/twitter.svg"
+                alt="Icon: twitter"
+            /></a>
+            <a href="https://www.instagram.com/" target="_blank">
+              <img
+                class="social-links__instagram"
+                src="img/instagram.svg"
+                alt="Icon: instagram"
+              />
+            </a>
+            <a href="https://www.linkedin.cn/" target="_blank"
+              ><img
+                class="social-links__linkedin"
+                src="img/linkedin.svg"
+                alt="Icon: linkedin"
+            /></a>
+            <a href="https://www.youtube.com/" target="_blank"
+              ><img
+                class="social-links__youtube"
+                src="img/youtube.svg"
+                alt="Icon: youtube"
+            /></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="modal">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="Icon: close" />
+        </a>
+        <a href="index.html"
+          ><img src="img/logo.svg" alt="Logo: ehya" class="logo"
+        /></a>
+        <form action="send.php" method="POST" class="modal__form form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Ваше имя*"
+            name="name_modal"
+            minlength="2"
+            required
+          />
+          <input
+            type="tel"
+            class="input modal__input telephone"
+            placeholder="Номер телефона*"
+            name="phone_modal"
+            data-mask="+7(000)000-00-00"
+            data-mask-reverse="true"
+            minlength="16"
+            required
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email_modal"
+            required
+          />
+          <textarea
+            class="message modal__message"
+            placeholder="Сообщение"
+            name="message_modal"
+          ></textarea>
+          <div class="modal__required">
+            <button class="button modal__button" type="submit">
+              Отправить
+            </button>
+            <span class="modal__info">* Обязательные поля</span>
+          </div>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>

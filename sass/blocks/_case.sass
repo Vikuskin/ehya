@@ -1,0 +1,41 @@
+.swiper
+  &-container
+    width: 1194px
+    &--secondary
+      width: 804px
+  &-wrapper
+    width: 100%
+  &-slide
+    position: relative
+
+.case
+  &-article
+    margin-bottom: 96px
+  &-button
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    width: 54px
+    height: 56px
+    background-repeat: no-repeat
+    background-position: center
+    border: none
+    background-color: transparent
+    cursor: pointer
+    z-index: 99
+    &--secondary
+      transform: translateY(-95%)
+    &:hover
+      border: 2px solid #0D2436
+      border-radius: 50%
+    &-prev
+      background-image: url(../img/arrow-prev.svg)
+      left: 0
+    &-next
+      background-image: url(../img/arrow-next.svg)
+      right: 0
+  &-offer
+    color: #1565D8
+    font-size: 16px
+    line-height: 22px
+    max-width: 145px
